@@ -1,0 +1,52 @@
+body, html
+{
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+#board
+{
+  position: absolute;
+  width: 320px;
+  display: flex;
+  flex-flow: wrap;
+  border: 2px solid #222222;
+}
+
+#board div
+{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+img
+{
+  width: 40px;
+  height: 40px;
+}
+
+.white
+{
+  background: #DDDDDD;
+}
+
+.black
+{
+  background: #555555;
+}
+
+#promotion_w, #promotion_b
+{
+  width: 160px;
+  display: flex;
+  position: absolute;
+  background: #888888;
+  border: 2px solid #222222;
+  border-bottom: none;
+  z-index: -100;
+  transition: 300ms;
+  cursor: pointer;
+}
